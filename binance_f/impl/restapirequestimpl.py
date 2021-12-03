@@ -388,7 +388,8 @@ class RestApiRequestImpl(object):
 
 
     def get_position_mode(self):
-        
+        builder = UrlParamsBuilder()
+
         request = self.__create_request_by_get_with_signature("/fapi/v1/positionSide/dual", builder)
 
         def parse(json_wrapper):
