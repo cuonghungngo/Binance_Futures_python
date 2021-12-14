@@ -13,6 +13,7 @@ class Position:
         self.marginType = ""
         self.isolatedMargin = 0.0
         self.positionSide = ""
+        self.notional = 0.0
 
 
     @staticmethod
@@ -30,4 +31,5 @@ class Position:
         result.marginType = json_data.get_string("marginType")
         result.isolatedMargin = json_data.get_float("isolatedMargin")
         result.positionSide = json_data.get_string("positionSide")
+        result.notional = json_data.get_string("notional")
         return result
