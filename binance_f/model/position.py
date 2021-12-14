@@ -31,5 +31,5 @@ class Position:
         result.marginType = json_data.get_string("marginType")
         result.isolatedMargin = json_data.get_float("isolatedMargin")
         result.positionSide = json_data.get_string("positionSide")
-        result.notional = json_data.get_string("notional")
+        result.notional = json_data.get_float("notional")
         return result
